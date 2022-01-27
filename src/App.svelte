@@ -27,9 +27,10 @@
 <div id="whoAreUs" style="position: relative; top: 400px;"/>
 <div id="solution" style="position: relative; top: 1175px;"/>
 <div id="team" style="position: relative; top: 1750px;"/>
-<NavBar />
+<div id="contact" style="position: relative; top: 2500px;"/>
 <Router {url}>
     <Route path="/">
+		<NavBar route="/" />
 		<Parallax sections={3.2} config={{stiffness: 0.3}}>
 			<ParallaxLayer rate={0} offset={0}>
 				<img class="banner" src="img/BannerNuageMalin.gif" alt="banner">
@@ -75,8 +76,8 @@
 		</Parallax>
 		<Footer />
 	</Route>
-	<Route path="/404">
-        <NavBar />
+	<Route path="*">
+        <NavBar route="404"/>
         <MainFrame>
             <Not404 />
         </MainFrame>

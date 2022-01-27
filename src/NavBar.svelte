@@ -13,6 +13,8 @@
     function handleUpdate(event) {
         isOpen = event.detail.isOpen;
     }
+
+    export let route = "";
 </script>
 
 <header>
@@ -21,6 +23,7 @@
             <img class="logo" src="img/NuageFavicon.png" alt="logo" />
             <div class="fs-2 title" style="display:inline-block">Nuage Malin</div>
         </a>
+        {#if route == "/"}
         <NavbarToggler on:click={() => (isOpen = !isOpen)} />
         <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
             <Nav class="ms-auto" navbar>
@@ -37,10 +40,11 @@
                 </NavItem>
                 <div class="ml"/>
                 <NavItem>
-                    <NavLink href="#team" class="fs-6">Nous contacter</NavLink>
+                    <NavLink href="#contact" class="fs-6">Nous contacter</NavLink>
                 </NavItem>
             </Nav>
         </Collapse>
+        {/if}
     </Navbar>
 </header>
 
