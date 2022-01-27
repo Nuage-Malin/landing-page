@@ -25,7 +25,7 @@
         <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
             <Nav class="ms-auto" navbar>
                 <NavItem>
-					<NavLink href="#about" id="about-nav" class="fs-6">Qui sommes-nous ?</NavLink>
+					<NavLink href="#whoAreUs" id="about-nav" class="fs-6">Qui sommes-nous ?</NavLink>
 				</NavItem>
                 <div class="ml"/>
                 <NavItem>
@@ -33,7 +33,11 @@
                 </NavItem>
                 <div class="ml"/>
                 <NavItem>
-                    <NavLink href="#solution" class="fs-6">Notre équipe</NavLink>
+                    <NavLink href="#team" class="fs-6">Notre équipe</NavLink>
+                </NavItem>
+                <div class="ml"/>
+                <NavItem>
+                    <NavLink href="#team" class="fs-6">Nous contacter</NavLink>
                 </NavItem>
             </Nav>
         </Collapse>
