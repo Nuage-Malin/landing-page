@@ -29,7 +29,7 @@
 <div id="team" style="position: relative; top: 1750px;"/>
 <div id="contact" style="position: relative; top: 2500px;"/>
 <Router {url}>
-    <Route path="/">
+    <Route path="*">
 		<NavBar route="/" />
 		<Parallax sections={3.2} config={{stiffness: 0.3}}>
 			<ParallaxLayer rate={0} offset={0}>
@@ -76,12 +76,12 @@
 		</Parallax>
 		<Footer />
 	</Route>
-	<Route path="*">
+	<!-- <Route path="*">
         <NavBar route="404"/>
         <MainFrame>
             <Not404 />
         </MainFrame>
-    </Route>
+    </Route> -->
 </Router>
 
 <style>
