@@ -1,67 +1,106 @@
 <script lang="ts">
-    import {
-        Navbar,
-        NavbarToggler,
-        Nav,
-        NavItem,
-        NavLink,
-        Collapse,
-    } from "sveltestrap";
+    let bool = false;
 
-    let isOpen = false;
-
-    function handleUpdate(event) {
-        isOpen = event.detail.isOpen;
+    function toggle_menu() {
+        if (bool === false) {
+            bool = true;
+        } else {
+            bool = false;
+        }
     }
 
-    export let route = "";
+    // export let route = "";
 </script>
 
-<header>
-    <Navbar style="padding-top: 0; padding-bottom: 0;"class="fixed-top shadow-lg" color="light" light expand="md">
-        <a class="navbar-brand" href="/">
-            <img class="logo" src="img/NuageFavicon.png" alt="logo" />
-            <div class="fs-2 title" style="display:inline-block">Nuage Malin</div>
-        </a>
-        {#if route == "/"}
-        <NavbarToggler on:click={() => (isOpen = !isOpen)} />
-        <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
-            <Nav class="ms-auto" navbar>
-                <NavItem>
-					<NavLink href="#whoAreUs" id="about-nav" class="fs-6">Qui sommes-nous ?</NavLink>
-				</NavItem>
-                <div class="ml"/>
-                <NavItem>
-                    <NavLink href="#solution" class="fs-6">Nos solutions</NavLink>
-                </NavItem>
-                <div class="ml"/>
-                <NavItem>
-                    <NavLink href="#team" class="fs-6">Notre équipe</NavLink>
-                </NavItem>
-                <div class="ml"/>
-                <NavItem>
-                    <NavLink href="#contact" class="fs-6">Nous contacter</NavLink>
-                </NavItem>
-            </Nav>
-        </Collapse>
-        {/if}
-    </Navbar>
+<header class="nav flex shadow">
+    <a class="title" href="/">
+        <img class="logo" src="svg/NuageWithoutText.svg" alt="logo" />
+        Nuage Malin
+    </a>
+    <button class="icon-toggle" on:click={toggle_menu}><img src="svg/iconMenu.svg" alt="icon_menu"></button>
+    <ul data-visible={bool} class="nav-right flex">
+        <li><a href="#whoAreUs">Qui sommes-nous ?</a></li>
+        <li><a href="#solution">Nos solutions</a></li>
+        <li><a href="#team">Notre équipe</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+    </ul>
 </header>
 
 <style>
+    .flex {
+        display: flex;
+        gap: var(--gap, 4rem);
+    }
+    .nav {
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 9998;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+
+        background-color: white;
+    }
+    .nav-right {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .shadow {
+        border-color: black;
+    }
     a {
         text-decoration: none;
+        font-size: 0.9vw;
     }
     .title {
         color: #4881d5;
         font-family: "Quicksand", sans-serif;
-    }
-    .ml {
-        margin-left: 30px;
+        font-size: 30px;
     }
     .logo {
         width: 15%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .icon-toggle {
+        display: none;
+    }
+    .nav-right[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    @media (max-width: 1164px) {
+        .icon-toggle {
+            display: block;
+            position: absolute;
+            right: 1rem;
+            background: transparent;
+            border: none;
+            z-index: 9999;
+        }
+        .nav-right {
+            position: fixed;
+            inset: 0 0 0 50%;
+            background: rgba(237, 242, 251, 0.7);
+            backdrop-filter: blur(1rem);
+
+            flex-direction: column;
+            padding: min(30vh, 10rem) 3rem;
+            width: 60%;
+            transform: translateX(100%);
+            transition: transform 600ms ease-out;
+        }
+        .nav-right a {
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 422px) {
+        .nav-right {
+            padding: min(30vh, 10rem) 2rem;
+        }
+        .nav-right a {
+            font-size: 12px;
+        }
     }
 </style>
