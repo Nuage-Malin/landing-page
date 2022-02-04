@@ -26,7 +26,7 @@
                 </Row>
             </Col>
             <Col>
-                <img class="team" src="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry" alt="Picture_Arthur_Jourdan">
+                <img class="team" src="svg/unknow.svg" alt="Picture_Arthur_Jourdan">
                 <div class="fs-3 title">Arthur Jourdan</div>
                 <div class="mt-2" />
                 <div class="fs-6 paragraphe">Développeur Back-end</div>
@@ -64,7 +64,7 @@
                 </Row>
             </Col>
             <Col>
-                <img class="team" src="https://static-exp1.licdn.com/sc/h/244xhbkr7g40x6bsu4gi6q4ry" alt="Picture_Florian_Vanier">
+                <img class="team" src="svg/unknow.svg" alt="Picture_Florian_Vanier">
                 <div class="fs-3 title">Florian Vanier</div>
                 <div class="mt-2" />
                 <div class="fs-6 paragraphe">Développeur Front-end</div>
