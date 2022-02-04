@@ -53,8 +53,10 @@
     a {
         text-decoration: none;
         font-size: 0.9vw;
+        color: #4881d5;
     }
     .title {
+        width: 27%;
         color: #4881d5;
         font-family: "Quicksand", sans-serif;
         font-size: 30px;
@@ -71,6 +73,9 @@
         transform: translateX(0%);
     }
     @media (max-width: 1164px) {
+        .title {
+            width: 65%;
+        }
         .icon-toggle {
             display: block;
             position: absolute;
@@ -83,7 +88,7 @@
             position: fixed;
             inset: 0 0 0 50%;
             background: rgba(237, 242, 251, 0.7);
-            backdrop-filter: blur(1rem);
+            backdrop-filter: blur(0.5rem);
 
             flex-direction: column;
             padding: min(30vh, 10rem) 3rem;
@@ -96,6 +101,9 @@
         }
     }
     @media (max-width: 422px) {
+        .title {
+            width: 100%;
+        }
         .nav-right {
             padding: min(30vh, 10rem) 2rem;
         }
