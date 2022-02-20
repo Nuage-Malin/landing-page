@@ -10,17 +10,7 @@
     import { Router, Route } from "svelte-routing";
 	import { Parallax, ParallaxLayer } from 'svelte-parallax'
 
-	let resume = 0.5;
-
-	function upRate() {
-		if (window.screen.width <= 700) {
-			resume = -0.7;
-		} else {
-			resume = 0.5;
-		}
-		return resume;
-	}
-	console.log(upRate());
+	let resume = 3.11;
 
     export const url = "";
 </script>
@@ -39,26 +29,28 @@
 <Router {url}>
     <Route path="*">
 		<NavBar route="/" />
-		<Parallax sections={3.2} config={{stiffness: 0.3}}>
+		<Parallax sections={3.3} config={{stiffness: 0.3}}>
 			<ParallaxLayer rate={0} offset={1}>
 				<img class="banner" src="img/BannerNuageMalin.png" alt="banner">
 			</ParallaxLayer>
-			<ParallaxLayer rate={resume} on:update={upRate} offset={1.31}>
+			<ParallaxLayer rate={0.5} offset={1.3}>
 				<Resume />
 			</ParallaxLayer>
+			<ParallaxLayer rate={0} offset={0} style={"background-color: white;"}/>
+			<ParallaxLayer rate={0} offset={2.7} style={"background-color: white;"}/>
 			<ParallaxLayer rate={0} offset={0}>
 				<img class="banner" src="img/BannerNuageMalin.gif" alt="banner">
 			</ParallaxLayer>
-			<ParallaxLayer rate={1} offset={0.99} style={"background-color: white; height: 34% !important;"}>
+			<ParallaxLayer rate={1} offset={0.99} style={"background-color: white; display: flex !important; justify-content: center !important;"}>
 				<WhoAreUS />
 			</ParallaxLayer>
-			<ParallaxLayer rate={0} offset={1.8}>
-				<img src="img/BannerNuageMalin.png" alt="banner">
+			<ParallaxLayer rate={0} offset={1.9}>
+				<img class="banner" src="img/BannerNuageMalin.png" alt="banner">
 			</ParallaxLayer>
-			<ParallaxLayer rate={1} offset={1.70} style={"background-color: white;"}>
+			<ParallaxLayer rate={1} offset={1.7} style={"background-color: white; display: flex !important; justify-content: center !important;"}>
 				<Solution />
 			</ParallaxLayer>
-			<ParallaxLayer rate={2} offset={2}>
+			<ParallaxLayer rate={1.7} offset={2}>
 				<Team />
 			</ParallaxLayer>
 		</Parallax>
@@ -73,9 +65,26 @@
 </Router>
 
 <style>
+	:root {
+		/* Font Family */
+		--ff-t: "Quicksand", sans-serif;
+		--ff-p: "Hammersmith One", sans-serif;
+		/* Font-Size */
+        --fs-xl: clamp(1.5rem, 1vw + 1rem, 2.5rem);
+        --fs-l: clamp(1rem, 1vw + 0.7rem, 2rem);
+        --fs-m: clamp(0.9rem, 1vw + 0.2rem, 1.8rem);
+        --fs-s: clamp(0.8rem, 1vw + 0.6rem, 1.2rem);
+        --fs-xs: clamp(0.8rem, 1vw + 0.1rem, 1rem);
+		/* Color */
+		--c-gray: #edf2fb;
+		--c-blue-sky: #c1d3fe;
+		--c-blue-sky2: #abc4ff;
+		--c-blue: #4881d5;
+		--c-green: #bdf1c3; 
+    }
 	.banner {
 		width: 100%;
-		height: 800px;
+		height: 909px;
 		object-fit: cover;
 	}
 </style>
