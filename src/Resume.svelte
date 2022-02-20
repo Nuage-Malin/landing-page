@@ -1,68 +1,56 @@
 <script>
 </script>
 
-<div class="primary-resume flex">
-    <ul>
-        <li><img class="icon" src="icon/team.png" alt="icon team"></li>
-        <li><div class="mt-3 title">9</div></li>
-        <li><div class="title">personnes</div></li>
-    </ul>
-    <ul>
-        <li><img class="icon" src="icon/map.png" alt="icon map"></li>
-        <li><div class="mt-3 title">En France</div></li>
-    </ul>
-    <ul>
-        <li><img class="icon" src="icon/target.png" alt="icon target"></li>
-        <li><div class="mt-3 title">Optimisation,</div></li>
-        <li><div class="title">Écologie</div></li>
-    </ul>
+<div class="container">
+    <div class="col">
+        <img class="icon" src="icon/team.png" alt="icon team">
+        <div class="mt-3 title">9</div>
+        <div class="title">personnes</div>
+    </div>
+    <div>
+        <img class="icon" src="icon/map.png" alt="icon map">
+        <div class="mt-3 title">En France</div>
+    </div>
+    <div>
+        <img class="icon" src="icon/target.png" alt="icon target">
+        <div class="mt-3 title">Optimisation,</div>
+        <div class="title">Écologie</div>
+    </div>
 </div>
 
 <style>
-    :root {
-        --ml-mr-resume: 5%;
-        --fs-l: clamp(0.9rem, 1vw + 0.2rem, 1.8rem);
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-inline: auto;
     }
-    .primary-resume {
+    .col {
         align-items: center;
-        margin-left: var(--ml-mr-resume);
-        margin-right: var(--ml-mr-resume);
-    }
-    .flex {
-        display: flex;
-        gap: var(--gap, 2rem);
-    }
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
     }
     .title {
-		text-align: center;
-        font-family: "Quicksand", sans-serif;
-		color: #4881d5;
-        font-size: var(--fs-l);
-		margin: auto;
+		color: var(--c-blue);
+
+        text-align: center;
+        font-size: var(--fs-xl);
+        font-family: var(--ff-t);
 	}
 	.mt-3 {
 		margin-top: 3.5%;
 	}
 	.icon {
-		width: 20%;
+		width: 15%;
 		margin: auto;
 		display: block;
 	}
-    @media (max-width: 1000px) {
-        .icon {
-		    width: 40%;
-        }
-    }
     @media (max-width: 700px) {
-        .primary-resume {
-            flex-direction: column;
+        .container {
+            margin-top: -30%;
+            grid-template-columns: none;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2rem;
         }
         .icon {
-            width: 15%;
+            width: 10%;
         }
     }
 </style>

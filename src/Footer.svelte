@@ -1,64 +1,119 @@
 <script>
-    import { Container, Row, Col } from "sveltestrap"
 </script>
 
-<footer style="background: white;" class="shadow-lg">
-	<Container>
-        <Row>
-            <Col xs="6">
-		        <img class="logo" src="img/NuageMalin_logo2.png" alt="logo_NuageMalin">
-            </Col>
-            <Col xs="6">
-		        <div class="fs-1 title" style="margin-top: 15%">Contactez-nous !</div>
-            </Col>
-        </Row>
-        <Row>
-            <Col sm="12" md={{ size: 6, offset: 3 }}>
-                <a href="https://www.instagram.com/nuagemalin/"><img class="icon ml-30" src="icon/instagram.png" alt="contact_instagram_NuageMalin"></a>
-                <a href="https://www.linkedin.com/company/nuage-malin"><img class="icon" src="icon/linkedinBlue.png" alt="contact_linkedin_NuageMalin"></a>
-                <a href="https://twitter.com/NuageMalin_fr"><img class="icon" src="icon/twitter.png" alt="contact_twitter_NuageMalin"></a>
-            </Col>
-        </Row>
-        <Row>
-            <Col sm="12" md={{ size: 6, offset: 3 }}>
-                <div class="fs-3 title centre mb-7">nuagemalinfr@protonmail.com</div>
-            </Col>
-            <Col sm="12" md={{ size: 6, offset: 3 }}>
-                <div class="fs-6 title centre mb-7">
-                    <a href="404">Conditions générales de vente</a> - <a href="/404">Politique de confidentialité</a> - <a href="/404">Mentions Légales</a> - <a href="/404">Attestation conformité RGPD</a></div>
-            </Col>
-        </Row>
-	</Container>
+<footer>
+    <div class="container flex">
+        <div class="center-items" style="padding-block: 1rem;">
+            <img class="logo" src="img/NuageMalin_logo2.png" alt="logo_NuageMalin">
+            <h1>Contactez-nous !</h1>
+        </div>
+        <div class="reseaux">
+            <a href="https://www.instagram.com/nuagemalin/">
+                <img class="icon" src="icon/instagram.png" alt="contact_instagram_NuageMalin">
+            </a>
+            <a href="https://www.linkedin.com/company/nuage-malin">
+                <img class="icon" src="icon/linkedinBlue.png" alt="contact_linkedin_NuageMalin">
+            </a>
+            <a href="https://twitter.com/NuageMalin_fr">
+                <img class="icon" src="icon/twitter.png" alt="contact_twitter_NuageMalin">
+            </a>
+        </div>
+        <div class="center-items">
+            <h3>nuagemalinfr@protonmail.com</h3>
+        </div>
+        <div class="lien">
+            <a href="/404">Conditions générales de vente</a> - 
+            <a href="/404">Politique de confidentialité</a>
+            -
+            <a href="/404">Mentions Légales</a>
+            -
+            <a href="/404">Attestation conformité RGPD</a>
+        </div>
+    </div>
 </footer>
 
 <style>
-    .title {
-        font-family: "Quicksand", sans-serif;
-		color: #4881d5;
-		margin: auto;
+    footer {
+        position: absolute;
+        width: 100%;
+        z-index: 9000;
+        margin-top: -20%;
+        background-color: white;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container {
+        max-width: 50rem;
+        margin-inline: auto;
+        padding-inline: 3rem;
+    }
+    .center-items {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .reseaux {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+    h1 {
+        margin-block: 0;
+        margin-inline: 0;
+		color: var(--c-blue);
+        font-weight: normal;
+        font-family: var(--ff-t);
+        font-size: var(--fs-xl);
 	}
+    h3 {
+        margin-block: 1em;
+        color: var(--c-blue);
+        font-weight: normal;
+        font-family: var(--ff-t);
+        font-size: var(--fs-l);
+    }
+    .lien {
+        text-align: center;
+        color: var(--c-blue);
+        padding-bottom: 7%;
+    }
+    .lien a {
+        text-align: center;
+        color: var(--c-blue);
+        font-family: var(--ff-t);
+        font-size: var(--fs-s);
+    }
+    .lien a:hover {
+        text-decoration: underline;
+    }
     .logo {
-        margin-left: 40%;
-        width: 40%;
+        width: 15rem;
     }
     .icon {
-        width: 7%;
-        margin-right: 7%;
-        margin-bottom: 7%;
+        width: 3rem;
     }
-    .ml-30 {
-        margin-left: 30%;
+    @media (max-width: 71em) {
+        footer {
+            margin-top: -25%;
+        }
+        .icon {
+            width: 2rem;
+        }
     }
-    .mb-7 {
-        margin-bottom: 7%;
-    }
-    .centre {
-        text-align: center;
-    }
-    a {
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
+    @media (max-width: 25em) {
+        footer {
+            margin-top: -50%;
+        }
+        .logo {
+            width: 10rem;
+            object-fit: cover;
+            height: 7rem;
+        }
+        .center-items {
+            flex-direction: column;
+        }
     }
 </style>
