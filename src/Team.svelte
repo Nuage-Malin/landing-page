@@ -1,217 +1,107 @@
 <script>
-    import { Container, Row, Col } from "sveltestrap"
+    import Profile from "./Profile.svelte";
 </script>
 
-<Container>
-    <div style="background: white; border-radius: 20px;">
-        <div class="fs-1 title">Notre équipe</div>
-        <Row cols={{ lg: 3, md: 2, sm: 1 }}>
-            <Col>
-                <img class="team" src="img/alexandre.jpeg" alt="Picture_Alexandre_Vranckx">
-                <div class="fs-3 title">Alexandre Vranckx</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Front-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/alexandre-vranckx-955029188/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:alexandre.vranckx@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="svg/unknow.svg" alt="Picture_Arthur_Jourdan">
-                <div class="fs-3 title">Arthur Jourdan</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Back-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/arthurjourdan/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:arthur.jourdan@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/evan.jpeg" alt="Picture_Evan_Sabre">
-                <div class="fs-3 title">Evan Sabre</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Front-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/evansabre/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:evan.sabre@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="svg/unknow.svg" alt="Picture_Florian_Vanier">
-                <div class="fs-3 title">Florian Vanier</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Front-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/florian-vanier-15b0051ab/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:florian.vanier@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/nell.jpeg" alt="Picture_Nell_Fauveau">
-                <div class="fs-3 title">Nell Fauveau</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Back-end, DevOps</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/nell-fauveau-a8b582224/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:nell.fauveau@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/pol.jpeg" alt="Picture_Pol_Bachelin">
-                <div class="fs-3 title">Pol Bachelin</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Front-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/polbachelin/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:pol.bachelin@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/romain.jpeg" alt="Picture_Romain_Bizouarn">
-                <div class="fs-3 title">Romain Bizouarn</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Front-end, Designer</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/romain-bizouarn-a625361a2/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:romain.bizouarn@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/sullivan.jpeg" alt="Picture_Sullivan_Geslot">
-                <div class="fs-3 title">Sullivan Geslot</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Back-end</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/sullivan-geslot-/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:sullivan.geslot@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <Col>
-                <img class="team" src="img/vincent.jpeg" alt="Picture_Vincent_Andrieu">
-                <div class="fs-3 title">Vincent Andrieu</div>
-                <div class="mt-2" />
-                <div class="fs-6 paragraphe">Développeur Fullstack, DevOps</div>
-                <Row>
-                    <div class="mt-3" />
-                    <Col xs="6">
-                        <a href="https://www.linkedin.com/in/vincent-andrieu-/">
-                            <img style="margin-left: 80%" class="icon-fit" src="icon/linkedin.png" alt="icon_linkedin">
-                        </a>
-                    </Col>
-                    <Col xs="6">
-                        <a href="mailto:vincent.andrieu@epitech.eu">
-                            <img class="icon-fit" src="icon/email.png" alt="icon_email">
-                        </a>
-                    </Col>
-                </Row>
-            </Col>
-            <div class="mt-7" />
-        </Row>
+<div class="primary-container">
+    <h1 class="title">Notre équipe</h1>
+    <div class="grid">
+        <Profile
+            img="img/alexandre.jpeg"
+            name="Alexandre Vranckx"
+            skills="Développeur Front-end"
+            linkedin="https://www.linkedin.com/in/alexandre-vranckx-955029188/"
+            email="mailto:alexandre.vranckx@epitech.eu"
+        />
+        <Profile
+            img="svg/unknow.svg"
+            name="Arthur Jourdan"
+            skills="Développeur Back-end"
+            linkedin="https://www.linkedin.com/in/arthurjourdan/"
+            email="mailto:arthur.jourdan@epitech.eu"
+        />
+        <Profile
+            img="img/evan.jpeg"
+            name="Evan Sabre"
+            skills="Développeur Front-end"
+            linkedin="https://www.linkedin.com/in/evansabre/"
+            email="mailto:evan.sabre@epitech.eu"
+        />
+        <Profile
+            img="svg/unknow.svg"
+            name="Florian Vanier"
+            skills="Développeur Front-end"
+            linkedin="https://www.linkedin.com/in/florian-vanier-15b0051ab/"
+            email="mailto:florian.vanier@epitech.eu"
+        />
+        <Profile
+            img="img/nell.jpeg"
+            name="Nell Fauveau"
+            skills="Développeur Back-end, DevOps"
+            linkedin="https://www.linkedin.com/in/nell-fauveau-a8b582224/"
+            email="mailto:nell.fauveau@epitech.eu"
+        />
+        <Profile
+            img="img/pol.jpeg"
+            name="Pol Bachelin"
+            skills="Développeur Front-end"
+            linkedin="https://www.linkedin.com/in/polbachelin/"
+            email="mailto:pol.bachelin@epitech.eu"
+        />
+        <Profile
+            img="img/romain.jpeg"
+            name="Romain Bizouarn"
+            skills="Développeur Front-end, Designer"
+            linkedin="https://www.linkedin.com/in/romain-bizouarn-a625361a2/"
+            email="mailto:romain.bizouarn@epitech.eu"
+        />
+        <Profile
+            img="img/sullivan.jpeg"
+            name="Sullivan Geslot"
+            skills="Développeur Back-end"
+            linkedin="https://www.linkedin.com/in/sullivan-geslot-/"
+            email="mailto:sullivan.geslot@epitech.eu"
+        />
+        <Profile
+            img="img/vincent.jpeg"
+            name="Vincent Andrieu"
+            skills="Développeur Fullstack, DevOps"
+            linkedin="https://www.linkedin.com/in/vincent-andrieu-/"
+            email="mailto:vincent.andrieu@epitech.eu"
+        />
     </div>
-</Container>
+</div>
 
 <style>
-    .title {
+    .primary-container {
+        background: white;
+        border-radius: 20px;
+        margin-inline: 15%;
+        margin-top: -20%;
+        padding-block: 2rem;
+    }
+    h1 {
 		text-align: center;
-        font-family: "Quicksand", sans-serif;
-		color: #4881d5;
+		color: var(--c-blue);
+        font-family: var(--ff-t);
+        font-weight: normal;
+        font-size: var(--fs-xl);
 	}
-	.paragraphe {
-		text-align: center;
-        font-family: "Hammersmith One", sans-serif;
-		color: #858585;
-		margin: auto;
-	}
-	.mt-7 {
-		margin-top: 7%;
-	}
-	.mt-3 {
-		margin-top: 3.5%;
-	}
-	.mt-2 {
-		margin-top: 2%;
-	}
-	.icon-fit {
-		width: 15%;
-		display: block;
-	}
-	.team {
-		border-radius: 100%;
-		width: 39%;
-		margin-left: 30%;
-		margin-top: 20%;
-		margin-bottom: 5%;
-	}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 71em) {
+        .primary-container {
+            margin-top: -40%;
+        }
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 500px) {
+        .primary-container {
+            margin-top: -80%;
+            margin-inline: 5%;
+        }
+    }
 </style>
