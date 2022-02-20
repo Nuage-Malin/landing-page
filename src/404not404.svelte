@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { links } from "svelte-routing";
     import { Col, Row } from "sveltestrap";
 
@@ -11,25 +11,25 @@
         const element = document.getElementById("question");
         element.click();
     }
-</script>
+</script> -->
 
 <!-- svelte-ignore a11y-missing-content -->
-<a
+<!-- <a
     href="https://www.linkedin.com/company/nuage-malin/"
     target="_blank"
     id="linkedin"
     hidden
-/>
+/> -->
 <!-- svelte-ignore a11y-missing-content -->
-<a
+<!-- <a
     href="https://docs.google.com/forms/d/e/1FAIpQLSdJnwaO0kW8Oz6FDjxTzUHthHNVbMxGNhiZQfsuwziqiDji4Q/viewform?usp=pp_url"
     target="_blank"
     id="question"
     use:links
     hidden
-/>
+/> -->
 
-<div class="main">
+<!-- <div class="main">
     <Row>
         <Col>
             <p class="title fs-1">Ici bientôt, une éclaircie</p>
@@ -49,10 +49,10 @@
             </div>
         </Col>
     </Row>
-</div>
+</div> -->
 
 <style>
-    .main {
+    /* .main {
         position: absolute;
         margin-top: 13%;
         margin-left: 7%;
@@ -61,15 +61,15 @@
     .title {
         text-align: center;
         max-width: 484px;
-        font-family: "Quicksand", sans-serif;
-        color: #4881d5;
+        font-family: var(--ff-t);
+        color: var(--c-blue);
     }
 
     .para {
         text-align: center;
         max-width: 484px;
-        font-family: "Hammersmith One", sans-serif;
-        color: #abc4ff;
+        font-family: var(--ff-p);
+        color: var(--c-blue-sky2);
     }
 
     .align_button {
@@ -87,28 +87,28 @@
         border-radius: 25px;
 
         text-align: center;
-        font-family: "Hammersmith One", sans-serif;
-        color: #4881d5;
+        font-family: var(--ff-p);
+        color: var(--c-blue);
     }
 
     .blue {
-        background: #c1d3fe;
-        border-color: #4881d5;
+        background: var(--c-blue-sky);
+        border-color: var(--c-blue);
     }
 
     .blue:active {
-        background: #abc4ff;
-        border-color: #4881d5;
+        background: var(--c-blue-sky2);
+        border-color: var(--c-blue);
     }
 
     .green {
-        background: #bdf1c3;
-        border-color: #4881d5;
+        background: var(--c-green);
+        border-color: var(--c-blue);
     }
 
     .green:active {
         background: rgb(161, 207, 167);
-        border-color: #4881d5;
+        border-color: var(--c-blue);
     }
 
     .img {
@@ -121,5 +121,5 @@
     }
     .margin-left {
         margin-left: 5%;
-    }
+    } */
 </style>
