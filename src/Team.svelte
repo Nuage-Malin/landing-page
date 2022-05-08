@@ -29,7 +29,7 @@
         <Profile
             img="svg/unknow.svg"
             name="Florian Vanier"
-            skills="Développeur Front-end"
+            skills="Développeur Fullstack"
             linkedin="https://www.linkedin.com/in/florian-vanier-15b0051ab/"
             email="mailto:florian.vanier@epitech.eu"
         />
