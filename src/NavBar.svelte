@@ -20,7 +20,7 @@
     <button class="icon-toggle" on:click={toggle_menu}><img src="svg/iconMenu.svg" alt="icon_menu"></button>
     <ul data-visible={bool} class="nav-right flex ligne">
         <li><a href="#whoAreUs">Qui sommes-nous ?</a></li>
-        <li><a href="#solution">Nos solutions</a></li>
+        <li><a href="#solution">Notre Solution</a></li>
         <li><a href="#team">Notre équipe</a></li>
         <li><a href="#contact">Nous contacter</a></li>
     </ul>
