@@ -4,25 +4,41 @@
 <footer>
     <div class="container flex">
         <div class="center-items" style="padding-block: 1rem;">
-            <img class="logo" src="img/NuageMalin_logo2.png" alt="logo_NuageMalin">
+            <img
+                class="logo"
+                src="img/NuageMalin_logo2.png"
+                alt="logo_NuageMalin"
+            />
             <h1>Contactez-nous !</h1>
         </div>
         <div class="reseaux">
             <a href="https://www.instagram.com/nuagemalin/">
-                <img class="icon" src="icon/instagram.png" alt="contact_instagram_NuageMalin">
+                <img
+                    class="icon"
+                    src="icon/instagram.png"
+                    alt="contact_instagram_NuageMalin"
+                />
             </a>
             <a href="https://www.linkedin.com/company/nuage-malin">
-                <img class="icon" src="icon/linkedinBlue.png" alt="contact_linkedin_NuageMalin">
+                <img
+                    class="icon"
+                    src="icon/linkedinBlue.png"
+                    alt="contact_linkedin_NuageMalin"
+                />
             </a>
             <a href="https://twitter.com/NuageMalin_fr">
-                <img class="icon" src="icon/twitter.png" alt="contact_twitter_NuageMalin">
+                <img
+                    class="icon"
+                    src="icon/twitter.png"
+                    alt="contact_twitter_NuageMalin"
+                />
             </a>
         </div>
         <div class="center-items">
             <h3>nuagemalinfr@protonmail.com</h3>
         </div>
         <div class="lien">
-            <a href="/404">Conditions générales de vente</a> - 
+            <a href="/404">Conditions générales de vente</a> -
             <a href="/404">Politique de confidentialité</a>
             -
             <a href="/404">Mentions Légales</a>
@@ -37,7 +53,7 @@
         position: absolute;
         width: 100%;
         z-index: 9000;
-        margin-top: -20%;
+        margin-top: -10%;
         background-color: white;
     }
     .flex {
@@ -63,11 +79,11 @@
     h1 {
         margin-block: 0;
         margin-inline: 0;
-		color: var(--c-blue);
+        color: var(--c-blue);
         font-weight: normal;
         font-family: var(--ff-t);
         font-size: var(--fs-xl);
-	}
+    }
     h3 {
         margin-block: 1em;
         color: var(--c-blue);

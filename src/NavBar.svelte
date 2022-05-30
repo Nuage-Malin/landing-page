@@ -17,23 +17,25 @@
         <img class="logo" src="svg/NuageWithoutText.svg" alt="logo" />
         Nuage Malin
     </a>
-    <button class="icon-toggle" on:click={toggle_menu}><img src="svg/iconMenu.svg" alt="icon_menu"></button>
+    <button class="icon-toggle" on:click={toggle_menu}
+        ><img src="svg/iconMenu.svg" alt="icon_menu" /></button
+    >
     <ul data-visible={bool} class="nav-right flex ligne">
         <li><a href="#whoAreUs">Qui sommes-nous ?</a></li>
         <li><a href="#solution">Notre Solution</a></li>
+        <li><a href="#video">Vidéo de présentation</a></li>
         <li><a href="#team">Notre équipe</a></li>
         <li><a href="#contact">Nous contacter</a></li>
     </ul>
 </header>
 
 <style>
-
     .flex {
         display: flex;
         gap: 4rem;
     }
     .nav {
-	    box-sizing: border-box;
+        box-sizing: border-box;
         position: fixed;
         z-index: 9998;
         top: 0;
@@ -52,7 +54,7 @@
         color: var(--c-blue);
     }
     .shadow {
-        box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
     }
     a {
         padding: 0;

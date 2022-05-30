@@ -3,27 +3,33 @@
 
 <div class="container flex">
 	<div class="flex">
-		<img class="planet" src="img/planet.gif" alt="planet_image">
+		<img class="planet" src="img/planet.gif" alt="planet_image" />
 	</div>
 	<div class="article">
 		<div>
 			<h1>Notre Solution</h1>
 			<p>
-				Nuage Malin propose une solution cloud innovante en vous proposent de laisser 
-				dormir vos données pour respecter la planete.
+				Nuage Malin propose une solution cloud innovante en vous
+				proposent de laisser dormir vos données pour respecter la
+				planete.
 			</p>
 			<p>
-				Contrairement au autres acteurs du cloud qui proposent de compenser les émissions de Co2
-				en finançant des associations pour replanter des arbres nous voulons réduire ces émissions.
+				Contrairement au autres acteurs du cloud qui proposent de
+				compenser les émissions de Co2 en finançant des associations
+				pour replanter des arbres nous voulons réduire ces émissions.
 				Pour ce faire plusieurs pistes ont été étudiées.
 			</p>
 			<p>
-				Des améliorations aussi bien physique que logiciel, comme éteindre les machines physiques inutilisées ou encore optimisées 
-				les algorithmes d’allocation et d’ordonnancement afin de limiter la fréquence de certaines machine.
+				Des améliorations aussi bien physique que logiciel, comme
+				éteindre les machines physiques inutilisées ou encore optimisées
+				les algorithmes d’allocation et d’ordonnancement afin de limiter
+				la fréquence de certaines machine.
 			</p>
 			<p>
-				Pour notre solution, nous avons des plans d’attaques différents qui permette de réduire la consommation du cloud.
-				En combinant ces différentes méthodes nous pensons pouvoir atteindre des résultats conséquents en terme d’économie d’énergie.
+				Pour notre solution, nous avons des plans d’attaques différents
+				qui permette de réduire la consommation du cloud. En combinant
+				ces différentes méthodes nous pensons pouvoir atteindre des
+				résultats conséquents en terme d’économie d’énergie.
 			</p>
 		</div>
 	</div>
@@ -40,20 +46,20 @@
 		align-items: center;
 	}
 	.article {
-        max-width: 40rem;
-        margin-inline: auto;
-        padding-inline: 3rem;
+		max-width: 40rem;
+		margin-inline: auto;
+		padding-inline: 3rem;
 	}
-    h1 {
+	h1 {
 		color: var(--c-blue);
-        font-family: var(--ff-t);
+		font-family: var(--ff-t);
 		font-weight: normal;
 		font-size: var(--fs-xl);
 	}
 	p {
-        font-family: var(--ff-p);
+		font-family: var(--ff-p);
 		color: #858585;
-        font-size: var(--fs-s);
+		font-size: var(--fs-s);
 	}
 	.planet {
 		width: 30rem;
@@ -65,13 +71,13 @@
 			flex-direction: column;
 		}
 		.article {
-			max-width: 40rem;
+			max-width: 60rem;
 		}
 		h1 {
 			text-align: center;
 		}
 		.planet {
-			width: 70%;
+			width: 50%;
 		}
 	}
 	@media (max-width: 50rem) {
