@@ -1,14 +1,11 @@
-<script>
+<script lang="ts">
 </script>
 
 <div class="primary-container">
     <h1 class="title">Vidéo de présentation</h1>
     <div>
-        <video class="video">
-            <source
-                src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
-                type="video/mp4"
-            />
+        <video class="video" id="video" autoplay loop>
+            <source src="mp4/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
             <track kind="captions" />
         </video>
