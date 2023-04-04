@@ -23,11 +23,11 @@
 	</style>
 </svelte:head>
 
-<div id="whoAreUs" style="position: relative; top: 320px;" />
-<div id="solution" style="position: relative; top: 950px;" />
-<div id="video" style="position: relative; top: 1300px;" />
-<div id="team" style="position: relative; top: 1550px;" />
-<div id="contact" style="position: relative; top: 2500px;" />
+<div id="whoAreUs" style="position: relative; top: 450px;" />
+<div id="solution" style="position: relative; top: 1220px;" />
+<div id="video" style="position: relative; top: 1682px;" />
+<div id="team" style="position: relative; top: 1950px;" />
+<div id="contact" style="position: relative; top: 2850px;" />
 <Router {url}>
 	<Route path="*">
 		<NavBar route="/" />

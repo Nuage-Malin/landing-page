@@ -3,12 +3,12 @@
 </script>
 
 <div class="primary-container">
-    <h1 class="title">Notre équipe</h1>
+    <h1 class="title">Notre équipe actuelle</h1>
     <div class="grid">
         <Profile
             img="img/alexandre.jpeg"
             name="Alexandre Vranckx"
-            skills="Développeur Front-end"
+            skills="Développeur Back-end"
             linkedin="https://www.linkedin.com/in/alexandre-vranckx-955029188/"
             email="mailto:alexandre.vranckx@epitech.eu"
         />
@@ -20,16 +20,16 @@
             email="mailto:arthur.jourdan@epitech.eu"
         />
         <Profile
-            img="img/evan.jpeg"
-            name="Evan Sabre"
-            skills="Développeur Front-end"
-            linkedin="https://www.linkedin.com/in/evansabre/"
-            email="mailto:evan.sabre@epitech.eu"
+            img="img/vincent.jpeg"
+            name="Vincent Andrieu"
+            skills="Développeur Fullstack, DevOps"
+            linkedin="https://www.linkedin.com/in/vincent-andrieu-/"
+            email="mailto:vincent.andrieu@epitech.eu"
         />
         <Profile
             img="svg/unknow.svg"
             name="Florian Vanier"
-            skills="Développeur Fullstack"
+            skills="Développeur Front-end, Fullstack"
             linkedin="https://www.linkedin.com/in/florian-vanier-15b0051ab/"
             email="mailto:florian.vanier@epitech.eu"
         />
@@ -41,11 +41,22 @@
             email="mailto:nell.fauveau@epitech.eu"
         />
         <Profile
-            img="img/pol.jpeg"
-            name="Pol Bachelin"
+            img="img/mathis.jpeg"
+            name="Mathis Darde"
+            skills="Développeur Front-end, UI & UX"
+            linkedin="https://www.linkedin.com/in/mathis-darde-aa10241a3/"
+            email="mailto:mathis.darde@epitech.eu"
+        />
+    </div>
+    <br>
+    <h1 class="title">Membres originels</h1>
+    <div class="grid-bis">
+        <Profile
+            img="img/evan.jpeg"
+            name="Evan Sabre"
             skills="Développeur Front-end"
-            linkedin="https://www.linkedin.com/in/polbachelin/"
-            email="mailto:pol.bachelin@epitech.eu"
+            linkedin="https://www.linkedin.com/in/evansabre/"
+            email="mailto:evan.sabre@epitech.eu"
         />
         <Profile
             img="img/romain.jpeg"
@@ -62,11 +73,11 @@
             email="mailto:sullivan.geslot@epitech.eu"
         />
         <Profile
-            img="img/vincent.jpeg"
-            name="Vincent Andrieu"
-            skills="Développeur Fullstack, DevOps"
-            linkedin="https://www.linkedin.com/in/vincent-andrieu-/"
-            email="mailto:vincent.andrieu@epitech.eu"
+            img="img/pol.jpeg"
+            name="Pol Bachelin"
+            skills="Développeur Front-end"
+            linkedin="https://www.linkedin.com/in/polbachelin/"
+            email="mailto:pol.bachelin@epitech.eu"
         />
     </div>
 </div>
@@ -89,6 +100,10 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-bis {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 71em) {
         .primary-container {
