@@ -9,25 +9,24 @@
 		<div>
 			<h1>Notre Solution</h1>
 			<p>
-				Nuage Malin propose une solution cloud innovante en vous
-				proposent de laisser dormir vos données pour respecter la
-				planete.
+				Nuage Malin propose une solution cloud innovante en
+				proposant de laisser dormir vos données dans une démarche écologique.
 			</p>
 			<p>
-				Contrairement au autres acteurs du cloud qui proposent de
+				Contrairement aux autres acteurs du cloud qui proposent de
 				compenser les émissions de Co2 en finançant des associations
-				pour replanter des arbres nous voulons réduire ces émissions.
-				Pour ce faire plusieurs pistes ont été étudiées.
+				pour, par example, planter des arbres, nous souhaitons réduire ces émissions.
+				Pour se faire, plusieurs pistes ont été étudiées.
 			</p>
 			<p>
 				Des améliorations aussi bien physique que logiciel, comme
-				éteindre les machines physiques inutilisées ou encore optimisées
+				éteindre les machines physiques inutilisées ou encore optimiser
 				les algorithmes d’allocation et d’ordonnancement afin de limiter
-				la fréquence de certaines machine.
+				la fréquence d'utilisation de certaines machines.
 			</p>
 			<p>
-				Pour notre solution, nous avons des plans d’attaques différents
-				qui permette de réduire la consommation du cloud. En combinant
+				Pour notre solution, nous avons des axes de développement différents
+				qui permettent de réduire la consommation du cloud. En combinant
 				ces différentes méthodes nous pensons pouvoir atteindre des
 				résultats conséquents en terme d’économie d’énergie.
 			</p>
