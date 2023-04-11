@@ -7,6 +7,7 @@
 	import Footer from "./Footer.svelte";
 	import Video from "./Video.svelte";
 	import News from "./News.svelte";
+	import Success from "./Success.svelte";
 	import MainFrame from "./MainFrame.svelte";
 	import Not404 from "./404not404.svelte";
 	import { Router, Route } from "svelte-routing";
@@ -60,7 +61,7 @@
 			>
 				<WhoAreUS />
 			</ParallaxLayer>
-			<ParallaxLayer rate={0} offset={2.1}>
+			<ParallaxLayer rate={0.5} offset={2}>
 				<Resume />
 			</ParallaxLayer>
 			<ParallaxLayer
@@ -76,6 +77,9 @@
 					src="img/BannerNuageMalin.png"
 					alt="banner"
 				/>
+			</ParallaxLayer>
+			<ParallaxLayer rate={0.5} offset={3.5}>
+				<Success />
 			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
