@@ -83,20 +83,6 @@
         font-family: var(--ff-t);
         font-size: var(--fs-l);
     }
-    .lien {
-        text-align: center;
-        color: var(--c-blue);
-        padding-bottom: 7%;
-    }
-    .lien a {
-        text-align: center;
-        color: var(--c-blue);
-        font-family: var(--ff-t);
-        font-size: var(--fs-s);
-    }
-    .lien a:hover {
-        text-decoration: underline;
-    }
     .logo {
         width: 15rem;
     }
