@@ -6,6 +6,8 @@
 	import Team from "./Team.svelte";
 	import Footer from "./Footer.svelte";
 	import Video from "./Video.svelte";
+	import News from "./News.svelte";
+	import Success from "./Success.svelte";
 	import MainFrame from "./MainFrame.svelte";
 	import Not404 from "./404not404.svelte";
 	import { Router, Route } from "svelte-routing";
@@ -23,33 +25,26 @@
 	</style>
 </svelte:head>
 
-<div id="whoAreUs" style="position: relative; top: 320px;" />
-<div id="solution" style="position: relative; top: 950px;" />
-<div id="video" style="position: relative; top: 1300px;" />
-<div id="team" style="position: relative; top: 1550px;" />
-<div id="contact" style="position: relative; top: 2500px;" />
+<div id="whoAreUs" style="position: relative; top: 870px;" />
+<div id="solution" style="position: relative; top: 2180px;" />
+<div id="news" style="position: relative; top: 3500px;" />
+<div id="video" style="position: relative; top: 4460px;" />
+<div id="team" style="position: relative; top: 5300px;" />
+<div id="contact" style="position: relative; top: 7000px;" />
 <Router {url}>
 	<Route path="*">
 		<NavBar route="/" />
-		<Parallax sections={3.7} config={{ stiffness: 0.3 }}>
-			<ParallaxLayer rate={0} offset={1}>
+		<Parallax sections={8} config={{ stiffness: 0.3 }}>
+			<ParallaxLayer rate={0} offset={1.5}>
 				<img
 					class="banner"
 					src="img/BannerNuageMalin.png"
 					alt="banner"
 				/>
 			</ParallaxLayer>
-			<ParallaxLayer rate={0.5} offset={1.3}>
-				<Resume />
-			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
 				offset={0}
-				style={"background-color: white;"}
-			/>
-			<ParallaxLayer
-				rate={0}
-				offset={2.7}
 				style={"background-color: white;"}
 			/>
 			<ParallaxLayer rate={0} offset={0}>
@@ -60,41 +55,51 @@
 				/>
 			</ParallaxLayer>
 			<ParallaxLayer
-				rate={1}
+				rate={0}
 				offset={0.99}
 				style={"background-color: white; display: flex !important; justify-content: center !important;"}
 			>
 				<WhoAreUS />
 			</ParallaxLayer>
-			<ParallaxLayer rate={0} offset={1.9}>
-				<img
-					class="banner"
-					src="img/BannerNuageMalin.png"
-					alt="banner"
-				/>
+			<ParallaxLayer rate={0.5} offset={2}>
+				<Resume />
 			</ParallaxLayer>
 			<ParallaxLayer
-				rate={1}
-				offset={1.7}
+				rate={0}
+				offset={2.4}
 				style={"background-color: white; display: flex !important; justify-content: center !important;"}
 			>
 				<Solution />
 			</ParallaxLayer>
-			<ParallaxLayer rate={0} offset={2.8}>
+			<ParallaxLayer rate={0} offset={3.35}>
 				<img
 					class="banner"
 					src="img/BannerNuageMalin.png"
 					alt="banner"
 				/>
 			</ParallaxLayer>
-			<ParallaxLayer rate={2} offset={2}>
+			<ParallaxLayer rate={0.5} offset={3.5}>
+				<Success />
+			</ParallaxLayer>
+			<ParallaxLayer
+				rate={0}
+				offset={3.8}
+				style={"background-color: white; display: flex !important; justify-content: center !important;"}
+			>
+				<News />
+			</ParallaxLayer>
+			<ParallaxLayer
+				rate={0}
+				offset={4.78}
+				span={4}
+				style={"background-color: #c1d3fe;"}
+			>
+			</ParallaxLayer>
+			<ParallaxLayer rate={0} offset={5.4}>
 				<Video />
 				<div style="margin: 500px;" />
 				<Team />
 			</ParallaxLayer>
-			<!-- <ParallaxLayer rate={1} offset={3}>
-				<Team />
-			</ParallaxLayer> -->
 		</Parallax>
 		<Footer />
 	</Route>

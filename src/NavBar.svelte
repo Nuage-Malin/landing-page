@@ -22,10 +22,11 @@
     >
     <ul data-visible={bool} class="nav-right flex ligne">
         <li><a href="#whoAreUs">Qui sommes-nous ?</a></li>
-        <li><a href="#solution">Notre Solution</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#news">Actualités</a></li>
         <li><a href="#video">Vidéo de présentation</a></li>
-        <li><a href="#team">Notre équipe</a></li>
-        <li><a href="#contact">Nous contacter</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </header>
 

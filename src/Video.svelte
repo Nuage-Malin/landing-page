@@ -1,14 +1,23 @@
 <script lang="ts">
+    import VideoPlayer from 'svelte-video-player';
+    // let video: HTMLVideoElement;
+
+    // video = document.querySelector("video");
+    // video.addEventListener('DOMContentLoaded', () => {
+    //     video.addEventListener("click", playRNot);
+    // });
+
+
+    // function playRNot() {
+    //     console.log("test");
+    //     video.played ? video.pause() : video.play(); arguments[0].preventDefault();
+    // }
 </script>
 
 <div class="primary-container">
     <h1 class="title">Vidéo de présentation</h1>
-    <div>
-        <video class="video" id="video" autoplay loop>
-            <source src="mp4/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-            <track kind="captions" />
-        </video>
+    <div class=video>
+        <VideoPlayer source="mp4/video.mp4" color="#4881d5" poster="img/poster_video.png"/>
     </div>
 </div>
 
@@ -23,7 +32,6 @@
         z-index: -100;
         background-size: cover;
         overflow: hidden;
-        border-radius: 20px;
         margin-left: 15%;
     }
 
