@@ -37,14 +37,6 @@
         <div class="center-items">
             <h3>nuagemalinfr@protonmail.com</h3>
         </div>
-        <div class="lien">
-            <a href="/404">Conditions générales de vente</a> -
-            <a href="/404">Politique de confidentialité</a>
-            -
-            <a href="/404">Mentions Légales</a>
-            -
-            <a href="/404">Attestation conformité RGPD</a>
-        </div>
     </div>
 </footer>
 
