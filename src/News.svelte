@@ -67,7 +67,7 @@
 				<p>
 					La partie back-end de Nuage Malin fonctionne en faisant communiquer différents
 					micro-services, allant de l'ordonnanceur à la gestion physique en passant par
-					l'indexeur. Chacun de ses micro-services sera développé et implementé au terme
+					l'indexeur. Chacun de ces micro-services sera développé et implementé au terme
 					de ce sprint Beta.
 				</p>
 				<p>
@@ -143,15 +143,15 @@
 			<div id="popup-tests" class="popup">
 				<p class="p2">
 					Le prochain sprint portera sur la recherche de testeur afin de montrer le
-					travail effectué tout au long de ces différents sprint et plus particulièrement
+					travail effectué tout au long de ces différents sprints et plus particulièrement
 					sur le sprint Beta. Nous souhaitons également utiliser ce futur sprint pour obtenir
-					le plus de retours utilisateurs possible.
+					le plus de retours utilisateurs possibles.
 				</p>
 			</div>
 			<div id="tests" class="circle">
 				<h2>Tests</h2>
 			</div>
-			<h2 class="date">Après mai 2023</h2>
+			<h2 class="date">Futur</h2>
 		</div>
 	</div>
 </div>
