@@ -25,10 +25,10 @@
 	</style>
 </svelte:head>
 
-<div id="whoAreUs" style="position: relative; top: 870px;" />
-<div id="solution" style="position: relative; top: 2180px;" />
-<div id="news" style="position: relative; top: 3500px;" />
-<div id="team" style="position: relative; top: 5300px;" />
+<div id="whoAreUs" style="position: relative; top: 600px;" />
+<div id="solution" style="position: relative; top: 1700px;" />
+<div id="news" style="position: relative; top: 2700px;" />
+<div id="team" style="position: relative; top: 3550px;" />
 <div id="contact" style="position: relative; top: 7000px;" />
 <Router {url}>
 	<Route path="*">
