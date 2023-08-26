@@ -76,7 +76,7 @@
 			text-align: center;
 		}
 		.planet {
-			width: 50%;
+			width: 30%;
 		}
 	}
 	@media (max-width: 50rem) {

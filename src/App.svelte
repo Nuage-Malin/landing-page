@@ -28,7 +28,6 @@
 <div id="whoAreUs" style="position: relative; top: 870px;" />
 <div id="solution" style="position: relative; top: 2180px;" />
 <div id="news" style="position: relative; top: 3500px;" />
-<div id="video" style="position: relative; top: 4460px;" />
 <div id="team" style="position: relative; top: 5300px;" />
 <div id="contact" style="position: relative; top: 7000px;" />
 <Router {url}>
@@ -66,7 +65,7 @@
 			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
-				offset={2.4}
+				offset={2.5}
 				style={"background-color: white; display: flex !important; justify-content: center !important;"}
 			>
 				<Solution />
@@ -84,19 +83,18 @@
 			<ParallaxLayer
 				rate={0}
 				offset={3.8}
-				style={"background-color: white; display: flex !important; justify-content: center !important;"}
+				style={"background-color: white; display: flex !important; justify-content: center !important; align-items: center !important; height 120%"}
 			>
 				<News />
 			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
-				offset={4.78}
+				offset={5.1}
 				span={4}
-				style={"background-color: #c1d3fe;"}
+				style={"background-color: #c1d3fe; height 200px !important;"}
 			>
 			</ParallaxLayer>
-			<ParallaxLayer rate={0} offset={5.4}>
-				<Video />
+			<ParallaxLayer rate={0} offset={5}>
 				<div style="margin: 500px;" />
 				<Team />
 			</ParallaxLayer>

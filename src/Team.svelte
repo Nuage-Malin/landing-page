@@ -47,39 +47,15 @@
             linkedin="https://www.linkedin.com/in/mathis-darde-aa10241a3/"
             email="mailto:mathis.darde@epitech.eu"
         />
+        <Profile
+            img="svg/unknow.svg"
+            name="Tom Seiguin"
+            skills="Développeur Front-end, UI & UX"
+            linkedin="https://www.linkedin.com/in/tom-seiguin-918369172/"
+            email="mailto:tom.seiguin@epitech.eu"
+        />
     </div>
     <br>
-    <h1 class="title">Membres originels</h1>
-    <div class="grid-bis">
-        <Profile
-            img="img/evan.jpeg"
-            name="Evan Sabre"
-            skills="Développeur Front-end"
-            linkedin="https://www.linkedin.com/in/evansabre/"
-            email="mailto:evan.sabre@epitech.eu"
-        />
-        <Profile
-            img="img/romain.jpeg"
-            name="Romain Bizouarn"
-            skills="Développeur Front-end, Designer"
-            linkedin="https://www.linkedin.com/in/romain-bizouarn-a625361a2/"
-            email="mailto:romain.bizouarn@epitech.eu"
-        />
-        <Profile
-            img="img/sullivan.jpeg"
-            name="Sullivan Geslot"
-            skills="Développeur Back-end"
-            linkedin="https://www.linkedin.com/in/sullivan-geslot-/"
-            email="mailto:sullivan.geslot@epitech.eu"
-        />
-        <Profile
-            img="img/pol.jpeg"
-            name="Pol Bachelin"
-            skills="Développeur Front-end"
-            linkedin="https://www.linkedin.com/in/polbachelin/"
-            email="mailto:pol.bachelin@epitech.eu"
-        />
-    </div>
 </div>
 
 <style>

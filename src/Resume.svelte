@@ -4,7 +4,7 @@
 <div class="container">
     <div class="col">
         <img class="icon" src="icon/team.png" alt="icon team">
-        <div class="mt-3 title">6</div>
+        <div class="mt-3 title">7</div>
         <div class="title">personnes</div>
     </div>
     <div>

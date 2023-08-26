@@ -5,7 +5,7 @@
     <div>
         <h1>Qui sommes-nous ?</h1>
         <p>
-            Nous sommes 6 étudiants à Epitech Rennes et nous développons ce
+            Nous sommes 7 étudiants à Epitech Rennes et nous développons ce
             projet dans le cadre de nos études.
             Notre mission est l'ultra optimisation pour que Nuage Malin
             puisse être le service le moins énergivore possible.

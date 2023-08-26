@@ -14,8 +14,7 @@
 
 <header class="nav flex shadow">
     <a class="title" href="/">
-        <img class="logo" src="svg/NuageWithoutText.svg" alt="logo" />
-        Nuage Malin
+        <img class="logo" src="img/2024_logo_nuagemalin.png" alt="logo" />
     </a>
     <button class="icon-toggle" on:click={toggle_menu}
         ><img src="svg/iconMenu.svg" alt="icon_menu" /></button
@@ -24,7 +23,6 @@
         <li><a href="#whoAreUs">Qui sommes-nous ?</a></li>
         <li><a href="#solution">Solution</a></li>
         <li><a href="#news">Actualités</a></li>
-        <li><a href="#video">Vidéo de présentation</a></li>
         <li><a href="#team">Equipe</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>

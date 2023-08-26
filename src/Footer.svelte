@@ -6,7 +6,7 @@
         <div class="center-items" style="padding-block: 1rem;">
             <img
                 class="logo"
-                src="img/NuageMalin_logo2.png"
+                src="img/2024_logo_nuagemalin.png"
                 alt="logo_NuageMalin"
             />
             <h1>Contactez-nous !</h1>

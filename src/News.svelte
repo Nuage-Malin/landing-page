@@ -162,6 +162,7 @@
 	}
 	.container {
 		margin-block: 10rem;
+		margin: 10%;
 		/* box-shadow: 10px 10px 10px 10px #c9c9c9; */
 	}
 	.flex {
@@ -267,7 +268,7 @@
 	}
 	@media (max-width: 71rem) {
 		.flex {
-			flex-direction: column;
+			flex-direction: row;
 		}
 		.article {
 			max-width: 60rem;
