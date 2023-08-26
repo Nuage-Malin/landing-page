@@ -7,6 +7,7 @@
 			document.getElementById("popup-alpha").setAttribute("style", "display: none");
 			document.getElementById("popup-beta").setAttribute("style", "display: none");
 			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
 		}
 		else if (document.getElementById("prototype").contains(e.target)) {
 			document.getElementById("popup-prototype").setAttribute("style", "display: flex");
@@ -14,6 +15,7 @@
 			document.getElementById("popup-alpha").setAttribute("style", "display: none");
 			document.getElementById("popup-beta").setAttribute("style", "display: none");
 			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
 		}
 		else if (document.getElementById("alpha").contains(e.target)) {
 			document.getElementById("popup-alpha").setAttribute("style", "display: flex");
@@ -21,6 +23,7 @@
 			document.getElementById("popup-prototype").setAttribute("style", "display: none");
 			document.getElementById("popup-beta").setAttribute("style", "display: none");
 			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
 		}
 		else if (document.getElementById("beta").contains(e.target)) {
 			document.getElementById("popup-beta").setAttribute("style", "display: flex");
@@ -28,6 +31,7 @@
 			document.getElementById("popup-alpha").setAttribute("style", "display: none");
 			document.getElementById("popup-prototype").setAttribute("style", "display: none");
 			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
 		}
 		else if (document.getElementById("tests").contains(e.target)) {
 			document.getElementById("popup-tests").setAttribute("style", "display: flex");
@@ -35,6 +39,15 @@
 			document.getElementById("popup-alpha").setAttribute("style", "display: none");
 			document.getElementById("popup-beta").setAttribute("style", "display: none");
 			document.getElementById("popup-prototype").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
+		}
+		else if (document.getElementById("lunch").contains(e.target)) {
+			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-amorce").setAttribute("style", "display: none");
+			document.getElementById("popup-alpha").setAttribute("style", "display: none");
+			document.getElementById("popup-beta").setAttribute("style", "display: none");
+			document.getElementById("popup-prototype").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: flex");
 		}
 		else {
 			document.getElementById("popup-amorce").setAttribute("style", "display: none");
@@ -42,6 +55,7 @@
 			document.getElementById("popup-alpha").setAttribute("style", "display: none");
 			document.getElementById("popup-beta").setAttribute("style", "display: none");
 			document.getElementById("popup-tests").setAttribute("style", "display: none");
+			document.getElementById("popup-lunch").setAttribute("style", "display: none");
 		}
 	});
 
@@ -126,21 +140,21 @@
 		</div>
 		<div class="line" />
 		<div class="element flex">
-			<div id="popup-beta" class="popup popup-actual">
+			<div id="popup-beta" class="popup">
 				<p class="p2">
 					Nous sommes actuellement en plein sprint Beta, notre objectif
 					est d'avoir une solution stable et testable par les
 					utilisateurs, pour plus d'informations, voir les actualités de Nuage Malin.
 				</p>
 			</div>
-			<div id="beta" class="actual">
+			<div id="beta" class="circle">
 				<h2>Beta</h2>
 			</div>
 			<h2 class="date">Mai 2023</h2>
 		</div>
 		<div class="line" />
 		<div class="element flex">
-			<div id="popup-tests" class="popup">
+			<div id="popup-tests" class="popup popup-actual">
 				<p class="p2">
 					Le prochain sprint portera sur la recherche de testeur afin de montrer le
 					travail effectué tout au long de ces différents sprint et plus particulièrement
@@ -148,10 +162,21 @@
 					le plus de retours utilisateurs possible.
 				</p>
 			</div>
-			<div id="tests" class="circle">
+			<div id="tests" class="actual">
 				<h2>Tests</h2>
 			</div>
-			<h2 class="date">Après mai 2023</h2>
+			<h2 class="date">Juillet 2023</h2>
+		</div><div class="line" />
+		<div class="element flex">
+			<div id="popup-lunch" class="popup">
+				<p class="p2">
+					Le prochain sprint portera sur le lancement du projet.
+				</p>
+			</div>
+			<div id="lunch" class="circle">
+				<h2>Lancement</h2>
+			</div>
+			<h2 class="date">Septembre 2023</h2>
 		</div>
 	</div>
 </div>
