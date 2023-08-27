@@ -142,7 +142,7 @@
 		<div class="element flex">
 			<div id="popup-beta" class="popup">
 				<p class="p2">
-					Nous sommes actuellement en plein sprint Beta, notre objectif
+					Nous avons lancer la Beta durant ce sprint, notre objectif
 					est d'avoir une solution stable et testable par les
 					utilisateurs, pour plus d'informations, voir les actualités de Nuage Malin.
 				</p>
@@ -156,10 +156,9 @@
 		<div class="element flex">
 			<div id="popup-tests" class="popup popup-actual">
 				<p class="p2">
-					Le prochain sprint portera sur la recherche de testeur afin de montrer le
+					Nous sommes actuellement en plein sprint qui porte sur la recherche de testeur afin de montrer le
 					travail effectué tout au long de ces différents sprint et plus particulièrement
-					sur le sprint Beta. Nous souhaitons également utiliser ce futur sprint pour obtenir
-					le plus de retours utilisateurs possible.
+					sur le sprint Beta.
 				</p>
 			</div>
 			<div id="tests" class="actual">
