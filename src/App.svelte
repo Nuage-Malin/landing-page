@@ -25,10 +25,10 @@
 	</style>
 </svelte:head>
 
-<div id="whoAreUs" style="position: relative; top: 600px;" />
-<div id="solution" style="position: relative; top: 1700px;" />
-<div id="news" style="position: relative; top: 2700px;" />
-<div id="team" style="position: relative; top: 3550px;" />
+<div id="whoAreUs" style="position: relative; top: 850px;" />
+<div id="solution" style="position: relative; top: 2150px;" />
+<div id="news" style="position: relative; top: 3550px;" />
+<div id="team" style="position: relative; top: 4500px;" />
 <div id="contact" style="position: relative; top: 7000px;" />
 <Router {url}>
 	<Route path="*">
@@ -65,7 +65,7 @@
 			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
-				offset={2.5}
+				offset={2.4}
 				style={"background-color: white; display: flex !important; justify-content: center !important;"}
 			>
 				<Solution />
@@ -89,7 +89,7 @@
 			</ParallaxLayer>
 			<ParallaxLayer
 				rate={0}
-				offset={5.1}
+				offset={4.9}
 				span={4}
 				style={"background-color: #c1d3fe; height 200px !important;"}
 			>

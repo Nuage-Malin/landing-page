@@ -70,24 +70,22 @@
 			<div>
 				<h1>Nos Actualités</h1>
 				<p>
-					Actuellement lancé sur notre sprint Beta, nous mettons tout en place
-					pour que vous puissiez tester Nuage Malin.
+					Actuellement lancé sur notre sprint Business, nous travaillons sur la communication
+					et le marketing du projet.
 				</p>
 				<p>
-					L'objectif de ce sprint est d'avoir un résultat proche de ce que pourrait
-					réellement être notre solution afin de vous permettre de tester et de
-					donner vos retours. 
+					L'objectif de ce sprint est de developper notre entrée sur le marché, trouver le
+					business plan le plus adapté pour Nuage Malin et de continuer parallèlement à trouver
+					de potentiels futurs clients. 
 				</p>
 				<p>
-					La partie back-end de Nuage Malin fonctionne en faisant communiquer différents
-					micro-services, allant de l'ordonnanceur à la gestion physique en passant par
-					l'indexeur. Chacun de ses micro-services sera développé et implementé au terme
-					de ce sprint Beta.
+					Avec l'aide de professionnels, nous réfléchissons à plusieures manières d'obtenir des
+					revenus afin de donner un vrai futur au projet.
 				</p>
 				<p>
-					La partie front-end quant à elle continue de recevoir des ajouts comme
-					le déplacement et la suppresion de vos fichiers et dossiers. Une amélioration
-					de l'expérience et de l'interface utilisateur est également en cours.
+					Ce sprint est le dernier dans le cadre du projet EIP, il est donc très important, nous
+					continuons également à prendre en compte vos retours utilisateurs afin de corriger
+					certaines fonctionnalités.
 				</p>
 			</div>
 		</div>
@@ -99,7 +97,7 @@
 					Cette étape représente la genèse de Nuage Malin.
 					C'est à ce moment la que l'équipe s'est construite,
 					que les premières idées sont arrivées en prenant en
-					compte les différents thèmes de projet disponibles.
+					compte les différents thèmes de projets disponibles.
 				</p>
 			</div>
 			<div id="amorce" class="circle">
@@ -142,9 +140,10 @@
 		<div class="element flex">
 			<div id="popup-beta" class="popup">
 				<p class="p2">
-					Nous avons lancer la Beta durant ce sprint, notre objectif
-					est d'avoir une solution stable et testable par les
-					utilisateurs, pour plus d'informations, voir les actualités de Nuage Malin.
+					Nous avons lancé la Beta durant ce sprint, notre objectif
+					était d'avoir une solution stable et testable par les
+					utilisateurs. Le résultat de ce sprint fut convaincant, malgré
+					les contraintes hardware.
 				</p>
 			</div>
 			<div id="beta" class="circle">
@@ -154,26 +153,28 @@
 		</div>
 		<div class="line" />
 		<div class="element flex">
-			<div id="popup-tests" class="popup popup-actual">
+			<div id="popup-tests" class="popup">
 				<p class="p2">
-					Nous sommes actuellement en plein sprint qui porte sur la recherche de testeur afin de montrer le
-					travail effectué tout au long de ces différents sprint et plus particulièrement
-					sur le sprint Beta.
+					Après la fin de la Beta, nous avons commencé le sprint Consolidation, l'objectif
+					est la recherche de testeur afin de montrer le travail effectué tout au long de
+					ces différents sprints et plus particulièrement sur le sprint Beta.
 				</p>
 			</div>
-			<div id="tests" class="actual">
+			<div id="tests" class="circle">
 				<h2>Tests</h2>
 			</div>
 			<h2 class="date">Juillet 2023</h2>
 		</div><div class="line" />
 		<div class="element flex">
-			<div id="popup-lunch" class="popup">
+			<div id="popup-lunch" class="popup popup-actual">
 				<p class="p2">
-					Le prochain sprint portera sur le lancement du projet.
+					Nous sommes actuellement en plein sprint Business, le dernier du projet EIP.
+					L'objectif est de trouver le business plan le plus adapté.
+					Pour plus d'informations, jetez un oeil aux dernières news Nuage Malin.
 				</p>
 			</div>
-			<div id="lunch" class="circle">
-				<h2>Lancement</h2>
+			<div id="lunch" class="actual">
+				<h2 class="launch">Lancement</h2>
 			</div>
 			<h2 class="date">Septembre 2023</h2>
 		</div>
@@ -268,6 +269,9 @@
 	  	height: 120px;
 	  	width: 120px;
 	  	border: 3px solid var(--c-blue);
+	}
+	.launch {
+		font-size: 120%;
 	}
 	.actual {
 		display: flex;
